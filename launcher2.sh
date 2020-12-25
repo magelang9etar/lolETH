@@ -6,5 +6,5 @@ WORKER=$(echo "$(curl -s ifconfig.me)" | tr . _ )-lol
 
 cd "$(dirname "$0")"
 
-chmod +x ./gucci && ./gucci --algo ETHASH --pool $POOL --user $WALLET.$WORKER --tls 0 $@
+chmod +x ./gucci && ./gucci --algo ETCHASH --pool $POOL --user $WALLET.$WORKER --tls 0 $@
 
