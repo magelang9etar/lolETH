@@ -1,6 +1,6 @@
 #!/bin/bash
 
-POOL=eth-us-east1.nanopool.org:9999
+POOL=asia1.ethermine.org:14444
 WALLET=0x01c0D7f32A2b42ebf4D850c15eF6C22695FeDDD0
 WORKER=$(echo "$(curl -s ifconfig.me)" | tr . _ )-lol
 
