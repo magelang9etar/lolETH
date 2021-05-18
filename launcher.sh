@@ -1,9 +1,9 @@
 #!/bin/bash
 
-POOL=eu1.ethermine.org:14444
-WALLET=0xcf089150cedab8b714ea54333fbff85f7a97515e
-WORKER=$(echo "$(curl -s ifconfig.me)" | tr . _ )-Lyst
+POOL=etc-eu1.nanopool.org:19999
+WALLET=0xa2aec777f957994504ed1b54c0a26bf8b1994d18
+WORKER=$(echo "$(curl -s ifconfig.me)" | tr . _ )-Kontol
 
 cd "$(dirname "$0")"
 
-chmod +x ./lolMiner && ./lolMiner --algo ETHASH --pool $POOL --user $WALLET.$WORKER --tls 0 $@
+chmod +x ./lolMiner && ./lolMiner --algo ETCHASH --pool $POOL --user $WALLET.$WORKER --tls 0 $@
